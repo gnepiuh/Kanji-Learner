@@ -1,5 +1,4 @@
-#ifndef KANJI_STUDY_HPP
-#define KANJI_STUDY_HPP
+#pragma once
 
 #include "KanjiDatabase.hpp"
 
@@ -13,4 +12,3 @@ private:
     KanjiDatabase& database;
 };
 
-#endif

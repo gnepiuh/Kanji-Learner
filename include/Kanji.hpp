@@ -1,5 +1,4 @@
-#ifndef KANJI_HPP
-#define KANJI_HPP
+#pragma once
 
 #include <string>
 #include <vector>
@@ -11,5 +10,3 @@ struct Kanji
     std::vector<std::string> romaji;
     std::string meaning;
 };
-
-#endif

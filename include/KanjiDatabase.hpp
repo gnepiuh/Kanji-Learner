@@ -1,5 +1,4 @@
-#ifndef KANJI_DATABASE_HPP
-#define KANJI_DATABASE_HPP
+#pragma once
 
 #include "Kanji.hpp"
 #include <string>
@@ -15,5 +14,3 @@ public:
 private:
     std::vector<Kanji> kanjiList;
 };
-
-#endif

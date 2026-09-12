@@ -1,0 +1,15 @@
+一	いち	ichi	one
+二	に	ni	two
+三	さん	san	three
+四	よん,し	yon,shi	four
+五	ご	go	five
+六	ろく	roku	six
+七	なな	nana,shichi	seven
+八	はち	hachi	eight
+九	きゅう	kyuu	nine
+十	じゅう	juu	ten
+百	ひゃく	hyaku	hundred
+千	せん	sen	thousand
+万	まん	man	ten thousand
+円	えん	en	yen 
+時	じ	ji	time 

@@ -1,5 +1,4 @@
-#ifndef KANJI_TEST_HPP
-#define KANJI_TEST_HPP
+#pragma once
 
 #include "KanjiDatabase.hpp"
 
@@ -19,5 +18,3 @@ private:
     KanjiDatabase &database;
     int score;
 };
-
-#endif

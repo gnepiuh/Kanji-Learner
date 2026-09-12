@@ -5,8 +5,7 @@ KanjiStudy::KanjiStudy(KanjiDatabase &database) : database(database) {}
 
 void KanjiStudy::displayKanji(const Kanji &kanji)
 {
-    std::cout << "\n"
-              << kanji.character << "\n";
+    std::cout << "\n" << kanji.character << "\n\n";
     std::cout << "Hiragana: ";
     for (const std::string &Hiragana : kanji.reading)
     {
@@ -22,11 +21,11 @@ void KanjiStudy::displayKanji(const Kanji &kanji)
 
 void KanjiStudy::startStudy()
 {
-    std::cout << "--- Study Mode ---\n";
+    std::cout << "--- Study Mode ---\n\n";
     int studied = 0;
     for (int i = 0; i < database.getSize(); i++)
     {
-        std::cout << "---Kanji #" << i + 1 << "---";
+        std::cout << "--- Kanji #" << i + 1 << " ---\n";
         const Kanji &kanji = database.getKanji(i);
         displayKanji(kanji);
         std::cout << "Press enter to continue, 2 to quit\n";
