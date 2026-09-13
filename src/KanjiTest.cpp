@@ -112,13 +112,21 @@ void KanjiTest::displayResults()
 
 void KanjiTest::startTest()
 {
+
+    std::cout << "\nWould you like your quiz to be randomized?\n1. Yes (Anything else for no)\n";
+    std::string choice{};
+    std::cin >> choice;
+    if (choice == "1")
+    {
+        database.randomizeQuestion();
+    }
     // system("clear");
     std::cout << "\nSession start\n";
     std::cout << "\n---Please enter your answer in either hiragana or romaji ONLY---\n";
 
     for (int i = 0; i < database.getSize(); i++)
     {
-        Kanji kanji = database.getKanji(i);
+        const Kanji &kanji = database.getKanji(i);
         if (runQuestion(kanji, i + 1))
         {
             score++;

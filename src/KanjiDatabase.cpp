@@ -2,6 +2,8 @@
 #include <fstream>
 #include <sstream>
 #include <iostream>
+#include <algorithm>
+#include <random>
 
 bool KanjiDatabase::loadKanjiFile(const std::string &fileName)
 {
@@ -53,7 +55,7 @@ bool KanjiDatabase::loadKanjiFile(const std::string &fileName)
     return true;
 }
 
-Kanji &KanjiDatabase::getKanji(int index)
+const Kanji &KanjiDatabase::getKanji(int index)
 {
     return kanjiList[index];
 }
@@ -61,4 +63,11 @@ Kanji &KanjiDatabase::getKanji(int index)
 size_t KanjiDatabase::getSize()
 {
     return kanjiList.size();
+}
+
+void KanjiDatabase::randomizeQuestion()
+{
+    std::random_device rd;
+    std::mt19937 g(rd());
+    std::shuffle(kanjiList.begin(), kanjiList.end(), g);
 }

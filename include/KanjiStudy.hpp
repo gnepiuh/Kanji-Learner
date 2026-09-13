@@ -5,10 +5,10 @@
 class KanjiStudy
 {
 public:
-    KanjiStudy(KanjiDatabase& database);
+    KanjiStudy(KanjiDatabase &database);
     void startStudy();
-    void displayKanji(const Kanji& kanji);
-private:
-    KanjiDatabase& database;
-};
+    void displayKanji(const Kanji &kanji);
 
+private:
+    KanjiDatabase &database;
+};

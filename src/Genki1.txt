@@ -12,4 +12,4 @@
 千	せん	sen	thousand
 万	まん	man	ten thousand
 円	えん	en	yen 
-時	じ	ji	time 
+時	じ,とき	ji,toki	time hour
